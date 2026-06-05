@@ -1,14 +1,12 @@
-# Java Runtime
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:21-jdk
 
-# App directory
 WORKDIR /app
 
-# Copy jar file
-COPY target/email-writer-sb-0.0.1-SNAPSHOT.jar app.jar
+COPY . .
 
-# Railway/Render/Koyeb port support
+RUN chmod +x mvnw
+RUN ./mvnw clean package -DskipTests
+
 EXPOSE 8080
 
-# Run application
-ENTRYPOINT ["java","-jar","app.jar"]
+CMD ["java","-jar","target/email-writer-sb-0.0.1-SNAPSHOT.jar"]
