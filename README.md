@@ -21,10 +21,10 @@
 ## 📸 Screenshots
 
 ### 📧 AI Reply Button in Gmail
-![AI Reply Button](assets/AIReplyButton-on-Email.png)
+![AI Reply Button](email-writer-ext/assets/AIReplyButton-on-Email.png)
 
 ### 💬 Reply Generated
-![Reply By AI](assets/ReplyByAI-Reply.png)
+![Reply By AI](email-writer-ext/assets/ReplyByAI-Reply.png)
 
 ## 🔧 Local Installation
 1. Clone this repository
